@@ -5,8 +5,7 @@ export default ({ data }) => {
   const { allMarkdownRemark } = data
   return (
     <div>
-      <h2>Latest Posts</h2>
-      <Link to="/blog">Read all posts</Link>
+      <h2>All Posts</h2>
       {allMarkdownRemark.edges.map(({ node }) => (
         <article key={node.id}>
           <Link to={`/${node.frontmatter.path}`}>
@@ -21,10 +20,7 @@ export default ({ data }) => {
 
 export const postQuery = graphql`
   query {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 5
-    ) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
