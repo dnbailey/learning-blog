@@ -7,7 +7,7 @@ import Article from "../components/Article"
 export default ({ data }) => {
   const { allMarkdownRemark } = data
   return (
-    <Layout>
+    <Layout title="All Posts">
       <h2>All Posts</h2>
       {allMarkdownRemark.edges.map(({ node }) => (
         <Article key={node.id} frontmatter={node.frontmatter} />
