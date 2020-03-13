@@ -1,5 +1,5 @@
 import React from "react"
-import { Title, Link, Meta } from "react-head"
+import { Title, Meta } from "react-head"
 
 import useSiteMetadata from "../utils/useSiteMetadata"
 
