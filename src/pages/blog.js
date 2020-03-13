@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/Layout"
+import Article from "../components/Article"
 
 export default ({ data }) => {
   const { allMarkdownRemark } = data
@@ -9,14 +10,7 @@ export default ({ data }) => {
     <Layout>
       <h2>All Posts</h2>
       {allMarkdownRemark.edges.map(({ node }) => (
-        <article key={node.id}>
-          <h3>
-            <Link to={`/${node.frontmatter.path}`}>
-              {node.frontmatter.title}
-            </Link>
-          </h3>
-          <p>{node.frontmatter.date}</p>
-        </article>
+        <Article key={node.id} frontmatter={node.frontmatter} />
       ))}
     </Layout>
   )

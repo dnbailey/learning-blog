@@ -4,6 +4,7 @@ import styled from "@emotion/styled"
 
 import colors from "../styles/colors"
 import Layout from "../components/Layout"
+import Article from "../components/Article"
 
 export default ({ data }) => {
   const { allMarkdownRemark } = data
@@ -27,14 +28,7 @@ export default ({ data }) => {
         </Header>
 
         {allMarkdownRemark.edges.map(({ node }) => (
-          <article key={node.id}>
-            <h3>
-              <Link to={`/${node.frontmatter.path}`}>
-                {node.frontmatter.title}
-              </Link>
-            </h3>
-            <p>{node.frontmatter.date}</p>
-          </article>
+          <Article key={node.id} frontmatter={node.frontmatter} />
         ))}
       </section>
     </Layout>
@@ -70,7 +64,7 @@ const Hero = styled.section`
   }
 `
 
-const Header = styled.header`
+const Header = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
