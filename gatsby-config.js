@@ -14,6 +14,12 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://neverstoplearningwith.me`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
