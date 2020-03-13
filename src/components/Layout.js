@@ -26,7 +26,21 @@ export default ({ title, children }) => {
       </Header>
       <main>{children}</main>
       <Footer>
-        <p>&copy; {new Date().getFullYear()} Nathan Bailey </p>
+        <p>&copy; {new Date().getFullYear()} Nathan Bailey | </p>
+
+        <Nav role="navigation" aria-label="Main">
+          <ul>
+            <li>
+              <Link to="/">Home</Link> - <Link to="/blog">All Posts</Link> -{" "}
+            </li>
+            <li>
+              <a href="https://twitter.com/dnbailey">Twitter</a> -{" "}
+            </li>
+            <li>
+              <a href="https://github.com/dnbailey">GitHub</a>
+            </li>
+          </ul>
+        </Nav>
       </Footer>
     </Container>
   )
@@ -63,4 +77,17 @@ const Footer = styled.footer`
   font-size: 0.65em;
   color: ${colors.secondary};
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+const Nav = styled.nav`
+  & ul {
+    padding: 0;
+    margin: 0 0 0 0.5em;
+    list-style: none;
+    & li {
+      display: inline-block;
+    }
+  }
 `
