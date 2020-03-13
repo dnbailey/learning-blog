@@ -15,6 +15,7 @@ const Article = styled.div`
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  margin: 0.5em 0;
   & p {
     margin: 0;
   }

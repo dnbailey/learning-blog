@@ -69,6 +69,7 @@ const Header = styled.div`
   justify-content: space-between;
   align-items: baseline;
   border-bottom: 1px solid ${colors.secondary};
+  margin-bottom: 1em;
   & h2 {
     margin-bottom: 0.5em;
   }
