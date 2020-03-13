@@ -3,6 +3,7 @@ title: "Strengths Finder"
 path: "strengths-finder"
 date: "2019-09-29"
 ---
+
 The following is a paper I wrote for one of my education course. I really enjoyed the opportunity to learn more about my strengths. The road to self-discovery is an important part of growing and learning. As I reflect on my own strengths, I can’t help but think about my students. I really look forward to discussing and learning with them about their strengths.
 
 As leaders and educators, it is critical that we know ourselves and know the ones we lead. How often do we spend our time telling students how they need to improve their weaknesses? How little time do we devote to celebrate and fostering their strengths? The following explores my journey to discover my own strengths, and it begins my journey to encourage those I lead to do the same.
@@ -14,7 +15,8 @@ Also this may seem a little stiff style-wise since it was written as an academic
 ## StrengthsFinder Reflection
 
 Gallup’s StrengthsFinder 2.0 is an incredible tool for developing an understanding of your strengths. After taking the survey, I gained many insights, and I have a clearer picture of the ways I can contribute my strengths as a leader and educator. We cannot just stop with understanding our strengths. We must examine the strengths of those we lead. I agree with what Couros and Novak (2019) said in Innovating Inside the Box:
-Not to mention, we should not help develop the weaknesses of our students, but our focus should be on their strengths. When people feel valued, they are more likely to show up and tun in physically and mentally. (p. 41)
+
+> ...we should not help develop the weaknesses of our students, but our focus should be on their strengths. When people feel valued, they are more likely to show up and tune in physically and mentally. — Couros and Novak (p. 41)
 
 Too often in education, we spend our time and resources trying to cultivate weaknesses. After learning about my strengths, I cannot help but question this practice and imagine the possibilities if we were to shift our focus on strengths. Lopez and Louis (2009) suggest that educators who focus on strengths utilize teach strategies that reflect those strengths and focus on eliciting the acumens of their pupils. I understand now that I must use my endowments, but also equip my students to use their own.
 
@@ -86,6 +88,7 @@ As I reflect on my experiences as an educator and leader, I see where I have uti
 In conclusion, knowing your strengths is fundamentally more important than knowing your weaknesses. Seeking opportunities to capitalize on strengths leads to fulfillment and happiness. As I explore more opportunities for leadership, I believe it is important to weigh the impact my strengths can be utilized in these new opportunities. I will certainly evaluate how to leverage my strengths in all endeavors.
 
 ### References
+
 Couros, G., & Novak, K. (2019). Innovate Inside the Box. IMpress.
 
 Gallup (Producer). (2019, September 27). Ideation: Highlights From Your CliftonStrengths 34 [Video file]. Retrieved from https://www.gallup.com/cliftonstrengths/en/267137/ideation-highlights-cliftonstrengths.aspx

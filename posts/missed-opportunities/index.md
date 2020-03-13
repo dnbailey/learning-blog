@@ -6,6 +6,8 @@ date: "2019-09-22"
 
 I missed an opportunity today. It was one of those many moments that I reflect on after a day in the classroom. Sometimes I get fixated on following my plan that I miss those moments that arise naturally when your teaching.
 
+> Opportunities are like sunrises. If you wait too long, you miss them. — William Arthur Ward
+
 My new classroom is a pretty amazing place to teach and learn. We have floor to ceiling windows that face a majestic view of the mountains. When the weather changes, the view is dramatic.
 
 ![Photo of my classroom.](./classroom.jpeg "This photo of my classroom just do it justice. The mountain is beautiful on a foggy morning.")
