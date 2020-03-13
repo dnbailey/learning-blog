@@ -28,6 +28,7 @@ export default css`
     p {
       max-width: 700px;
       margin: 1em auto;
+      overflow-wrap: break-word;
     }
   }
 
