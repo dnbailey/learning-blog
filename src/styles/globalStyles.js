@@ -44,5 +44,8 @@ export default css`
         margin-top: 1em;
       }
     }
+    twitter-widget {
+      margin: 0 auto;
+    }
   }
 `

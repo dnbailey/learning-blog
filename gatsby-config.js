@@ -18,6 +18,15 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-embed-video`,
+            options: {
+              width: 1100,
+              ratio: 1.77,
+              related: false,
+              noIframeBorder: true,
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1100,
@@ -26,6 +35,13 @@ module.exports = {
               showCaptions: true,
             },
           },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `@weknow/gatsby-remark-twitter`,
         ],
       },
     },
