@@ -26,7 +26,7 @@ export default ({ title, children }) => {
       </Header>
       <main>{children}</main>
       <Footer>
-        <p>&copy; {new Date().getFullYear()} Nathan Bailey | </p>
+        <p>&copy; {new Date().getFullYear()} Nathan Bailey </p>
       </Footer>
     </Container>
   )
