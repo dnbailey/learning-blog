@@ -23,8 +23,8 @@ export default ({ data }) => {
       </Hero>
       <section>
         <Header>
-          <h2>Latest Posts</h2>
-          <Link to="/blog">View all posts</Link>
+          <h2>Latest Articles</h2>
+          <Link to="/articles">View all articles</Link>
         </Header>
 
         {allMarkdownRemark.edges.map(({ node }) => (

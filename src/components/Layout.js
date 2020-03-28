@@ -10,6 +10,7 @@ import colors from "../styles/colors"
 
 import useSiteMetadata from "../utils/useSiteMetadata"
 import Seo from "./Seo"
+import useRandomArticle from "../utils/useRandomArticle"
 
 export default ({ title, children }) => {
   const { title: siteTitle } = useSiteMetadata()
@@ -31,10 +32,16 @@ export default ({ title, children }) => {
         <Nav role="navigation" aria-label="Main">
           <ul>
             <li>
-              <Link to="/">Home</Link> - <Link to="/blog">All Posts</Link> -{" "}
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="https://twitter.com/dnbailey">Twitter</a> -{" "}
+              <Link to="/articles">All Articles</Link>
+            </li>
+            <li>
+              <Link to={useRandomArticle()}>Random Article</Link>
+            </li>
+            <li>
+              <a href="https://twitter.com/dnbailey">Twitter</a>
             </li>
             <li>
               <a href="https://github.com/dnbailey">GitHub</a>
@@ -88,6 +95,16 @@ const Nav = styled.nav`
     list-style: none;
     & li {
       display: inline-block;
+      padding-right: 0.25em;
+      &::after {
+        content: "-";
+        padding-left: 0.25em;
+      }
+      &:last-child {
+        &::after {
+          content: "";
+        }
+      }
     }
   }
 `
