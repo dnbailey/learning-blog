@@ -1,4 +1,5 @@
 ---
+type: "article"
 title: "Missed Opportunities"
 path: "missed-opportunities"
 date: "2019-09-22"

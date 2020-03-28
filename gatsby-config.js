@@ -12,7 +12,15 @@ module.exports = {
         path: `${__dirname}/posts`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `books`,
+        path: `${__dirname}/books`,
+      },
+    },
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {

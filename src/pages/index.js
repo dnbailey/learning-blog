@@ -2,54 +2,90 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import styled from "@emotion/styled"
 
-import colors from "../styles/colors"
 import Layout from "../components/Layout"
 import Article from "../components/Article"
+import Book from "../components/Book"
+import Header from "../components/Header"
+import colors from "../styles/colors"
+import dimensions from "../styles/dimensions"
 
 export default ({ data }) => {
-  const { allMarkdownRemark } = data
+  const { articles, books } = data
   return (
     <Layout>
       <Hero>
+        <h1>Hi I'm Nathan Bailey.</h1>
         <h2>
-          Hi I'm Nathan, and I'm a learner. From pedagogy to programming, I have
-          an insatiable desire to learn. This journal is a place for me to
-          record what I am learning and share it with you. I hope you can find
-          some value in my journey, and that my learning can inpire your own.
-          You can also follow me on{" "}
-          <a href="https://twitter.com/dnbailey">Twitter</a> and{" "}
-          <a href="https://github.com/dnbailey">GitHub</a>.
+          I'm a learner. From pedagogy to programming, I have an insatiable
+          desire to learn. This journal is a place for me to record what I am
+          learning and share it with you. I hope you can find some value in my
+          journey, and that my learning can inpire your own. You can also follow
+          me on <a href="https://twitter.com/dnbailey">Twitter</a>.
         </h2>
       </Hero>
-      <section>
+      <Section>
         <Header>
           <h2>Latest Articles</h2>
           <Link to="/articles">View all articles</Link>
         </Header>
 
-        {allMarkdownRemark.edges.map(({ node }) => (
-          <Article key={node.id} frontmatter={node.frontmatter} />
+        {articles.edges.map(({ article }) => (
+          <Article key={article.id} frontmatter={article.frontmatter} />
         ))}
-      </section>
+      </Section>
+      <Section>
+        <Header>
+          <h2>What I'm Reading</h2>
+          <Link to="/books">View all books</Link>
+        </Header>
+        {books.edges.map(({ book }) => (
+          <Book key={book.id} book={book} />
+        ))}
+      </Section>
     </Layout>
   )
 }
 
 export const postQuery = graphql`
-  query {
-    allMarkdownRemark(
+  {
+    articles: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 3
+      filter: { frontmatter: { type: { eq: "article" } } }
     ) {
-      totalCount
       edges {
-        node {
+        article: node {
           id
           frontmatter {
             title
             date(fromNow: true)
             path
           }
+        }
+      }
+    }
+    books: allMarkdownRemark(
+      sort: { fields: [frontmatter___title], order: ASC }
+      filter: {
+        frontmatter: { type: { eq: "book" }, status: { eq: "reading" } }
+      }
+    ) {
+      edges {
+        book: node {
+          frontmatter {
+            title
+            author
+            cover {
+              childImageSharp {
+                fixed(height: 300) {
+                  ...GatsbyImageSharpFixed_withWebp
+                }
+              }
+            }
+            link
+            status
+          }
+          html
         }
       }
     }
@@ -62,18 +98,15 @@ const Hero = styled.section`
     text-decoration: none;
     font-variant: small-caps;
   }
+  h1 {
+    font-size: 2.5em;
+    color: ${colors.primary};
+    @media (max-width: ${dimensions.maxwidthMobile}) {
+      font-size: 2em;
+    }
+  }
 `
 
-const Header = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  border-bottom: 1px solid ${colors.secondary};
-  margin-bottom: 1em;
-  & h2 {
-    margin-bottom: 0.5em;
-  }
-  & a {
-    text-decoration: none;
-  }
+const Section = styled.section`
+  margin-bottom: 4em;
 `

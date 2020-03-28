@@ -1,4 +1,5 @@
 ---
+type: "article"
 title: "Atomic Habits"
 path: "atomic-habits"
 date: "2020-03-20"

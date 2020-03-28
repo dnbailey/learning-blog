@@ -1,4 +1,5 @@
 ---
+type: "article"
 title: "Hello world"
 path: "hello-world"
 date: "2020-02-12"

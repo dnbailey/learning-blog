@@ -1,4 +1,5 @@
 ---
+type: "article"
 title: "Playing the Whole Game"
 path: "playing-the-whole-game"
 date: "2019-09-24"

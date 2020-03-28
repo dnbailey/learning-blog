@@ -1,4 +1,5 @@
 ---
+type: "article"
 title: "Strengths Finder"
 path: "strengths-finder"
 date: "2019-09-29"
