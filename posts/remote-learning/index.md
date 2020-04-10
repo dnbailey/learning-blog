@@ -35,7 +35,7 @@ How often do I infect my students with anxiety during the normal school day? Pre
 
 ## Performance vs. Designing Experiences
 
-I have been engaging with the work of Phil Schlechty as part of my graduate program, and I find myself constantly thumbing back through his book [Engaging Studnets](https://www.amazon.com/Engaging-Students-Phillip-C-Schlechty/dp/0470640081) to find little nuggets of wisdom. One that I ran accross today really struck me as relevant to remote learning. He basically said that we have to shift our instruction from teacher performance to student performance. This necessitate designing engaging student learning experiences that require heuristic student performances.
+I have been engaging with the work of Phil Schlechty as part of my graduate program, and I find myself constantly thumbing back through his book [Engaging Students](https://www.amazon.com/Engaging-Students-Phillip-C-Schlechty/dp/0470640081) to find little nuggets of wisdom. One that I ran accross today really struck me as relevant to remote learning. He basically said that we have to shift our instruction from teacher performance to student performance. This necessitate designing engaging student learning experiences that require heuristic student performances.
 
 https://twitter.com/dnbailey/status/1247894525416058881
 
