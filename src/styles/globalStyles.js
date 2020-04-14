@@ -17,6 +17,7 @@ export default css`
 
   body {
     background: ${colors.light};
+    background-image: url("/bg.png");
     width: 100%;
     margin: 0 auto;
     font-size: 20px;
