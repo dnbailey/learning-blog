@@ -37,6 +37,13 @@ export default css`
       }
     }
 
+    hr {
+      border-top: 1px solid ${colors.secondary};
+      border-bottom: none;
+      border-right: none;
+      border-left: none;
+    }
+
     figure {
       margin: 1em 0;
       & figcaption {

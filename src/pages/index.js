@@ -19,8 +19,8 @@ export default ({ data }) => {
           I'm a learner. From pedagogy to programming, I have an insatiable
           desire to learn. This journal is a place for me to record what I am
           learning and share it with you. I hope you can find some value in my
-          journey, and that my learning can inpire your own. You can also follow
-          me on <a href="https://twitter.com/dnbailey">Twitter</a>.
+          journey, and that my learning can inspire your own. You can also
+          follow me on <a href="https://twitter.com/dnbailey">Twitter</a>.
         </h2>
       </Hero>
       <Section>
