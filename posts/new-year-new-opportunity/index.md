@@ -2,7 +2,7 @@
 type: "article"
 title: "New year, New Opportunity"
 path: "new-year-new-opportunities"
-date: "2021-01-06"
+date: "2021-01-10"
 ---
 
 Each new year presents an opportunity for renewal and shedding the negatives of the previous year. I think for most of us 2020 is a year we are happy to say goodbye to and will attempt to pump as far in our rear view as possible.
