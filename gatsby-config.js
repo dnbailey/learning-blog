@@ -68,17 +68,19 @@ module.exports = {
     `gatsby-plugin-react-head`,
     `gatsby-plugin-emotion`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Montserrat`,
-            variants: [`400`],
-          },
-          {
-            family: `Lato`,
-            variants: [`300`],
-          },
+          `montserrat\:400`,
+          `lato`,
+          // {
+          //   family: `Montserrat`,
+          //   variants: [`400`],
+          // },
+          // {
+          //   family: `Lato`,
+          //   variants: [`300`],
+          // },
         ],
       },
     },
